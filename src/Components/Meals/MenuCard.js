@@ -1,4 +1,4 @@
-import MealCard from "./MealCard";
+import MealCard from "./MealItems/MealCard";
 import classes from "./MenuCard.module.css";
 
 const MenuCard = (props) => {
