@@ -1,0 +1,17 @@
+.meal{
+    margin: 10px;
+}
+
+.mainInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.description{
+    text-align: left;
+    font-style: italic;
+}

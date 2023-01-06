@@ -1,11 +1,16 @@
 import MealCard from "./MealCard";
+import classes from './MenuCard.module.css'
 
-const MenuCard = props => {
-    const mealsList = props.mealItems.map((meal) => <li key={meal.id}>{meal.name}</li>);
+const MenuCard = (props) => {
+  const mealsList = props.mealItems.map((meal) => (
+    <MealCard mealItem={meal}  />
+  ));
 
-    return (
-        <ul>{mealsList}</ul>
-    );
-}
+  return (
+  <div className={classes.menu}>
+    <ul >{mealsList}</ul>
+  </div>
+  );
+};
 
-export default MenuCard
+export default MenuCard;
