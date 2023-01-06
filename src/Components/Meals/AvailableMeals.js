@@ -1,4 +1,5 @@
 import classes from './AvailableMeals.module.css'
+import MenuCard from './MenuCard';
 
 const DUMMY_MEALS = [
   {
@@ -28,11 +29,10 @@ const DUMMY_MEALS = [
 ];
 
 const AvailableMeals = () => {
-  const mealsList = DUMMY_MEALS.map((meal) => <li>{meal.name}</li>);
 
   return (
-    <section className = {classes.meal}>
-      <ul>{mealsList}</ul>
+    <section className = {classes.meals}>
+      <MenuCard mealItems = {DUMMY_MEALS} />
     </section>
   );
 };
