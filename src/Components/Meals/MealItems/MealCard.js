@@ -7,14 +7,12 @@ const MealCard = (props) => {
 
   return (
     <li className={classes.meal} key={meal.id}>
-      <div className={classes.flexContainers}>
+      <div>
         <div className={classes.name}>{meal.name}</div>
+        <div className={classes.description}>{meal.description}</div>
         <div className={classes.price}>{price}</div>
       </div>
-      <div className={classes.flexContainers}>
-        <div className={classes.description}>{meal.description}</div>
-        <MealItemForm />
-      </div>
+      <MealItemForm />
     </li>
   );
 };

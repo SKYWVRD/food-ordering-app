@@ -1,4 +1,28 @@
-.quantity {
-    max-width: 100px;
-    text-align: center;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addbutton {
+    background-color: #8a2b06;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 10px;
+    width: 75px;
+    font: inherit;
+    font-weight: bold;
+    font-size: small;
+    border-style: solid;
+    border-color: #8a2b06;
+    height: 30px;
+    flex-grow: 1;
+    min-width: 100%;
+    transition-duration: 0.4s;
+    
+}
+
+.addbutton:hover {
+    background-color: white;
+    color: black;
 }

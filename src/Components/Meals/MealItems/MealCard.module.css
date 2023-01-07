@@ -1,17 +1,26 @@
 .meal {
   margin: 10px;
-}
-
-.flexContainers {
   display: flex;
   justify-content: space-between;
+  border-bottom: solid 1px grey;
 }
 
-.name {
+li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.name, .description, .price {
+  text-align: left;
+}
+
+.name, .price {
   font-weight: bold;
 }
-
 .description {
-  text-align: left;
   font-style: italic;
+}
+
+.price {
+  color: #db4104;
 }
