@@ -16,8 +16,6 @@ const MealCard = (props) => {
       amount: amount,
       price: meal.price
     });
-
-    console.log(cartCtx);
   }
 
   return (
